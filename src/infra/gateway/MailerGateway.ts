@@ -1,3 +1,4 @@
+// interface adapter
 //port
 export interface MailerGateway {
     send (recipient: string, subject: string, content: string): Promise<void>
