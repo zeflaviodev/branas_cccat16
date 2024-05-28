@@ -11,7 +11,7 @@ export default class AccountController {
             return output
         })
 
-        httpServer.register('get', '/accounts/:accountId',  async function (params: any, body: any) {
+        httpServer.register('get', '/accounts/:{accountId}',  async function (params: any, body: any) {
             const input = {
                 accountId: params.accountId
             }
